@@ -3,45 +3,60 @@
 	<title>ResumPage</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="CSS/style.css">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <script src="JS/main.js"></script>	
 </head>
 <body>
-	<header class="header"> 
+	<header class="header">
+		<div class="header-logo"><i class="fas fa-cat-space"></i>Melik-x</div>
 		<nav class="header_navbar">
-        	<button class="header_navbar--item">Обо мне</button>
-	    	<button class="header_navbar--item">Skills</button>
-	    	<button class="header_navbar--item">Мои работы</button>
+			<ul>
+				<li class="header_navbar--item"><a href="#">Обо мне</a></li>
+	    		<li class="header_navbar--item"><a href="#">Skills</a></li>
+	    		<li class="header_navbar--item"><a href="#">Мои работы</a></li>
+	    	</ul>	
 	    </nav>
 	</header>
-	<main class="hidden">
-	    <section class="main_content--item main_content--info">
-        	<img  class="main_content--image" src="img/me.jpg" alt="me">
-		    <div class="main_content--aboutme"> 
-	        	<h1>Обо мне</h1> 	
-			  	<p>Имя: Анна</p>
+	<div class="aboutme">
+	    <section class="aboutme_card">
+	    	<h1 aboutme_card--header>Обо мне</h1> 
+        	<img  class="aboutme_img" src="img/me.jpg" alt="me">
+		    <section class="aboutme_info"> 
+	        	<p>Имя: Анна</p>
               	<p>Дата рождения: 29.09.1988</p>
               	<p>Город: Москва</p>
               	<p>Кто я: Intern/Junior frontend developer</p>
-            </div> 
+            </section> 
 		</section>
-	    
-	    <div class="main_content--item main_content--skills">
-	    	<h1 class="skills">My skills</h1>
+	</div>
+	<!--! Временно не нужно 	
+	<div class="skills">
+	    <h1 class="skills_header">My skills</h1>
+	    <section class="skills_item">
 	    	<ul>
-	    	<li>HTML5</li>
-	    	<li>CSS3</li>
-	    	<li>JavaScript</li>
-            <li>GIT</li> 
-	    	<li>Bootstrap3*</li>
-	    	<li>JQuery*</li>
+	    		<li>HTML5</li>
+	    		<li>CSS3</li>
+	    		<li>JavaScript</li>
+            	<li>GIT</li> 
+	    		<li>Bootstrap3*</li>
+	    		<li>JQuery*</li>
+	    	</ul>	
 	    	<p>* - опционально</p>
-			</ul>
-            </div>
-	    <div class="main_content--item main_content--myprojects">
+	    </section>	
+	</div>
+	<div class="portfolio">
 	    <h1>Мои работы:</h1>
-	    <h2>My1stProject</h2>
-	    <img class="example" src="img/main.jpg" alt=My1stProject> </div>
-	</main>
+	    <section class="my1stproject">
+	    	<h2>My1stProject</h2>
+	    	<figure>
+	    		<a><img class="example" src="img/main.jpg" alt=My1stProject></a>
+	    		<figcaption>Верстка с помощью Bootstrap</figcaption>
+	    	</figure>
+	    </section> 
+	</div>	
+	ВРеменно не нужно-->
 	<footer class="footer">
 	</footer>
 </body>
